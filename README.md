@@ -71,5 +71,3 @@ The UI is built with modern web aesthetics in mind, featuring:
 - Responsive Sidebar Navigation
 - Glassmorphic Stat Cards
 
----
-Developed by Antigravity AI.
