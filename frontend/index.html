@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostelEase | Premium Hostel Management</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-hotel"></i>
+                <span>HostelEase</span>
+            </div>
+            <nav>
+                <button class="nav-btn active" data-view="dashboard">
+                    <i class="fas fa-th-large"></i> Dashboard
+                </button>
+                <button class="nav-btn" data-view="rooms">
+                    <i class="fas fa-door-open"></i> Rooms
+                </button>
+                <button class="nav-btn" data-view="residents">
+                    <i class="fas fa-users"></i> Residents
+                </button>
+                <button class="nav-btn" data-view="payments">
+                    <i class="fas fa-wallet"></i> Payments
+                </button>
+                <button class="nav-btn" data-view="complaints">
+                    <i class="fas fa-exclamation-circle"></i> Complaints
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Admin&background=random" alt="Admin">
+                    <div class="user-info">
+                        <span class="user-name">Admin User</span>
+                        <span class="user-role">Super Admin</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header>
+                <div class="header-left">
+                    <h1 id="view-title">Dashboard</h1>
+                    <p id="view-subtitle">Welcome back! Here's what's happening today.</p>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search anything...">
+                    </div>
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                </div>
+            </header>
+
+            <div id="main-view-container">
+                <!-- Views will be injected here -->
+            </div>
+        </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
